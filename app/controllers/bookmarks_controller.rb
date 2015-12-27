@@ -1,8 +1,8 @@
 class BookmarksController < ApplicationController
   before_action :authenticate_user!
   def index
-    @bookmarks = Bookmark.all
-    @tests = current_user.bookmarks
+
+    @bookmarks = current_user.bookmarks
   end
 
   def new
@@ -21,6 +21,7 @@ class BookmarksController < ApplicationController
     @bookmark = current_user.bookmarks.build bookmark_params
 
     if @bookmark.save
+      flash[:notice] = "Your bookmark has successfully been saved"
       redirect_to bookmarks_path
     else
       flash[:notice] = "Please enter a valid URL"

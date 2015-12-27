@@ -1,0 +1,16 @@
+<%= form_for @bookmark do |f| %>
+    <fieldset>
+      <div class="form-group">
+        <%= f.label :url %>
+        <%= f.text_field :url, class: 'form-control' %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :descrption %>
+        <%= f.text_field :description, class: 'form-control' %>
+      </div>
+    </fieldset>
+
+    <%= f.submit "Submit", class: 'btn btn-primary' %>
+    <%= link_to 'Back', bookmarks_path, class: 'btn btn-default' %>
+<% end %>
