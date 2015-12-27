@@ -13,7 +13,6 @@
 *= @import "bootstrap-sprockets";
 *= @import "bootstrap";
 *= @import 'bootstrap/theme';
-
  *= require_tree .
  *= require_self
  *=
@@ -25,9 +24,9 @@
 @import "bootstrap/_theme.scss";
 
 .alert-alert {
-@extend .alert-warning;
+  @extend .alert-warning;
 }
 
 .alert-notice {
-@extend .alert-info;
+  @extend .alert-info;
 }

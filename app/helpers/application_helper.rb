@@ -4,4 +4,6 @@ module ApplicationHelper
     content_for(:header) { text.to_s }
   end
 
+
+
 end
