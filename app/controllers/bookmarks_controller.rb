@@ -2,6 +2,7 @@ class BookmarksController < ApplicationController
   before_action :authenticate_user!
   def index
     @bookmarks = Bookmark.all
+    @tests = current_user.bookmarks
   end
 
   def new
@@ -14,16 +15,10 @@ class BookmarksController < ApplicationController
 
   def edit
     @bookmark = Bookmark.find(params[:id])
-
-    if @bookmark.update(bookmark_params)
-      redirect_to 'index'
-    else
-      render 'edit'
-    end
   end
 
   def create
-    @bookmark = Bookmark.new bookmark_params
+    @bookmark = current_user.bookmarks.build bookmark_params
 
     if @bookmark.save
       redirect_to bookmarks_path
