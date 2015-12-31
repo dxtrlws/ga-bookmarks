@@ -2,20 +2,28 @@
 
 <h1>My Bookmarks</h1>
 
-<%= link_to("Add Bookmark", new_bookmark_path, class: 'btn btn-primary')  %>
+<%= link_to("Add Bookmark", new_bookmark_path, class: 'btn btn-primary btn-xs')  %>
 <br>
 <br>
 
 <% if @bookmarks.empty? %>
-    <%= "Looks like you don't have any bookmarks. Click the 'Add Bookmark' button above to get started." %>
+   <p> <%= "Looks like you don't have any bookmarks. Click the 'Add Bookmark' button above to get started." %> </p>
     <% else %>
     <% end %>
 
+
 <table class="table">
+  <tr>
+    <th>Bookmarks</th>
+  <th>Notes</th>
+  <th></th>
+    </tr>
       <%	 @bookmarks.each do |bookmark| %>
       <tr>
-        <td width="80%">  <%= link_to("#{bookmark.description}", bookmark.url) %> </td>
-        <td> <%= link_to("Edit", edit_bookmark_path(bookmark), class: 'btn btn-primary') %>   </td>
+        <td> <%= link_to("#{bookmark.description}", bookmark.url) %> </td>
+        <td> <%= bookmark.notes %></td>
+        <td align="right"> <%= link_to("Edit", edit_bookmark_path(bookmark), class: 'btn btn-primary btn-xs') %>
+          <%= link_to "Delete", delete_bookmark_path(bookmark), class: 'btn btn-danger btn-xs'  %>   </td>
       </tr>
       <% end %>
 </table>

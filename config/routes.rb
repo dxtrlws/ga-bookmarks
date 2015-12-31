@@ -1,13 +1,14 @@
 Rails.application.routes.draw do
 
+  resources :bookmarks do
+    get "delete", :on => :member
+  end
 
- resources :bookmarks
+  get '*path', to: 'pages#index' unless Rails.env.development?
 
   devise_for :users
   get 'pages/index'
   root to: 'pages#index'
-  get 'pages/secret'
-  get 'pages/test'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

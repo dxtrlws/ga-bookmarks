@@ -5,3 +5,63 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+bookmarks = [
+    {url: "http://google.com",
+    description: "Google",
+    notes: "Google's seach engine"
+    },
+
+    {url: "http://tivo.com",
+     description: "Tivo",
+     notes: "Manage Tivo Account"
+    },
+
+    {url: "http://google.com",
+     description: "Google",
+     notes: "Google's seach engine"
+    },
+
+    {url: "http://google.com",
+     description: "Google",
+     notes: "Google's seach engine"
+    },
+
+    {url: "http://google.com",
+     description: "Google",
+     notes: "Google's seach engine"
+    },
+
+    {url: "http://google.com",
+     description: "Google",
+     notes: "Google's seach engine"
+    },
+
+    {url: "http://google.com",
+     description: "Google",
+     notes: "Google's seach engine"
+    },
+
+    {url: "http://google.com",
+     description: "Google",
+     notes: "Google's seach engine"
+    },
+
+    {url: "http://google.com",
+     description: "Google",
+     notes: "Google's seach engine"
+    },
+
+    {url: "http://google.com",
+     description: "Google",
+     notes: "Google's seach engine"
+    },
+
+    {url: "http://google.com",
+     description: "Google",
+     notes: "Google's seach engine"
+    }
+
+]
+
+# bookmarks.each{|bookmark| Bookmark.create(bookmark)}

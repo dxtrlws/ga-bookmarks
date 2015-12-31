@@ -46,14 +46,14 @@ class BookmarksController < ApplicationController
 
   def destroy
     @bookmark = Bookmark.find(params[:id]).destroy
-    flash[:notice] = "Your bookmark has been removed"
+    flash[:notice] = "Your bookmark has been removed successfully"
     redirect_to bookmarks_path
   end
 
   private
 
   def bookmark_params
-    params.require(:bookmark).permit(:url, :description)
+    params.require(:bookmark).permit(:url,:notes, :description)
   end
 
 end
