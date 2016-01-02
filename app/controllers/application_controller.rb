@@ -5,6 +5,12 @@ class ApplicationController < ActionController::Base
 
   before_action :configure_permitted_parameters, if: :devise_controller?
 
+  class ApplicationController < ActionController::Base
+    def after_sign_in_path_for(resource)
+      request.env['omniauth.origin'] || stored_location_for(resource) || bookmarks_path
+    end
+  end
+
   protected
 
   def configure_permitted_parameters

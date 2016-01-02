@@ -1,5 +1,5 @@
 <% content_for :top_content do %>
-    <div class="jumbotron">
+    <div class="jumbotron" style="margin-top: -20px">
       <div class="container">
         <h1>Welcome!</h1>
         <p>Register to get started.</p>
@@ -8,4 +8,96 @@
         </p>
       </div>
     </div>
+
+
 <% end %>
+
+<section class="row why_choose" style="margin-top: -50px;">
+  <div class="container">
+    <div class="row sectionTitle">
+      <h5>Why Choose</h5>
+      <h2>GA Bookmarks</h2>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 cause2choose">
+        <div class="media">
+          <div class="media-left"><%=	 image_tag "icons/cause2choose/1.png" %></div>
+          <div class="media-body">
+            <h4>Bookmark search</h4>
+            <p>Easily find the bookmarks with our easy to use search tool</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 cause2choose">
+        <div class="media">
+          <div class="media-left"><%= image_tag "icons/cause2choose/2.png" %> </div>
+          <div class="media-body">
+            <h4>security</h4>
+            <p>Lorem ipsum dolor sit amet, ectetur adipiscing elit. Nullam eget</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 cause2choose">
+        <div class="media">
+          <div class="media-left"><%= image_tag "icons/cause2choose/3.png" %> </div>
+          <div class="media-body">
+            <h4>Bookmark sync</h4>
+            <p>Sync your bookmarks no matter what computer you use</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 cause2choose">
+        <div class="media">
+          <div class="media-left"><%= image_tag "icons/cause2choose/4.png" %> </div>
+          <div class="media-body">
+            <h4>Data in the cloud</h4>
+            <p>Your bookmarks are stored in the cloud and always accessiblet</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 cause2choose">
+        <div class="media">
+          <div class="media-left"><%= image_tag "icons/cause2choose/5.png" %></div>
+          <div class="media-body">
+            <h4>technical support</h4>
+            <p>Contact our support team if you have any technical difficulties</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 cause2choose">
+        <div class="media">
+          <div class="media-left"><%= image_tag "icons/cause2choose/6.png" %></div>
+          <div class="media-body">
+            <h4>free website optimization</h4>
+            <p>Lorem ipsum dolor sit amet, ectetur adipiscing elit. Nullam eget</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="row clients">
+  <div class="container">
+    <div class="row sectionTitle">
+      <h5>our partners &amp;</h5>
+      <h2>clients</h2>
+    </div>
+    <div class="row">
+      <ul class="nav nav-justified">
+        <li><%=	 link_to image_tag("clients/1.png"), pages_index_path %> </li>
+        <li><%=	 link_to image_tag("clients/2.png"), pages_index_path %> </li>
+        <li><%=	 link_to image_tag("clients/3.png"), pages_index_path %> </li>
+        <li><%=	 link_to image_tag("clients/4.png"), pages_index_path %> </li>
+        <li><%=	 link_to image_tag("clients/5.png"), pages_index_path %> </li>
+        <li><%=	 link_to image_tag("clients/6.png"), pages_index_path %> </li>
+        <li><%=	 link_to image_tag("clients/7.png"), pages_index_path %> </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+

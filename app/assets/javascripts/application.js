@@ -17,3 +17,9 @@
 //= require turbolinks
 //= require global
 //= require_tree .
+
+$(function() {
+    setTimeout(function(){
+        $('.alert').slideUp(500);
+    }, 3000);
+});
