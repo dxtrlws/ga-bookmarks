@@ -4,4 +4,6 @@ class User < ActiveRecord::Base
   has_many :bookmarks
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable,  :lockable, :zxcvbnable
+
+  validates :name, presence: true
 end
