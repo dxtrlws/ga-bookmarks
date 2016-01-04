@@ -8,4 +8,9 @@ class PagesController < ApplicationController
 
   end
 
+  def contact
+    render layout: 'contact'
+
+  end
+
 end
