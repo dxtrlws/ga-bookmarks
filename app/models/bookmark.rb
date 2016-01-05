@@ -5,4 +5,6 @@ class Bookmark < ActiveRecord::Base
   validates :url, format: {with: URI.regexp}, if: Proc.new {|a| a.url.present?}
   validates :description, presence:  true
 
+  scope :alpha, lambda { order("bookmarks.description, ASC") }
+
 end
