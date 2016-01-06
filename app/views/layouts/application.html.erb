@@ -15,7 +15,7 @@
   <%= render 'layouts/navigation' %>
 
   <% flash.each do |key, value| %>
-      <div class=" container alert alert-info" <%= key %>">
+      <div class="container alert alert-info <%= key %>">
         <%= value %>
       </div>
   <% end %>
