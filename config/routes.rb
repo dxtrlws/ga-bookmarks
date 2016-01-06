@@ -4,7 +4,7 @@ Rails.application.routes.draw do
     get "delete", :on => :member
   end
 
-  get '*path', to: 'pages#index' unless Rails.env.development?
+  # get '*path', to: 'pages#index' unless Rails.env.development?
 
   devise_for :users
   get 'pages/index'
