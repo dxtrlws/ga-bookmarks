@@ -10,20 +10,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= csrf_meta_tags %>
 </head>
-<body class="home">
+<body>
 
   <%= render 'layouts/navigation' %>
 
 
+
   <% flash.each do |key, value| %>
-<div class="container alert " style="margin-bottom: 20px;">
-  <div class="row">
+       <div class="container alert">
       <div style="margin-bottom: 20px;" class="container alert alert-notification <%= key %> col-lg-12">
         <p><%= value %></p>
       </div>
     </div>
-  </div>
+
   <% end %>
+
 
   <%= yield :top_content %>
 
