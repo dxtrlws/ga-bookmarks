@@ -9,7 +9,7 @@
     <p><strong>URL:</strong> <%=	 @bookmark.url %></p>
     <p><strong>Notes:</strong> <%= @bookmark.notes %> </p>
 
-  <%= link_to "Delete Bookmark", bookmark_path(@bookmark), method: "delete", class: 'btn btn-danger btn-xs' %> <%= link_to "Edit", edit_bookmark_path(@bookmark), class: 'btn btn-primary btn-xs' %> <%=	 link_to "Cancel", bookmarks_path, class: 'btn btn-default btn-xs' %>
+<p>  <%= link_to "Delete Bookmark", bookmark_path(@bookmark), method: "delete", class: 'btn btn-danger btn-xs' %> <%= link_to "Edit", edit_bookmark_path(@bookmark), class: 'btn btn-primary btn-xs' %> <%=	 link_to "Cancel", bookmarks_path, class: 'btn btn-default btn-xs' %> </p>
 
 </div>
 <br>
