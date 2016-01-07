@@ -16,9 +16,11 @@
 
 
   <% flash.each do |key, value| %>
+<div class="container">
       <div style="margin-bottom:20px;" class="container alert alert-notification <%= key %>">
         <p><%= value %></p>
       </div>
+  </div>
   <% end %>
 
   <%= yield :top_content %>
