@@ -182,7 +182,7 @@ Devise.setup do |config|
   config.last_attempt_warning = true
 
   # Config password score
-  config.min_password_score = 3
+  config.min_password_score = 0
 
   # ==> Configuration for :recoverable
   #
