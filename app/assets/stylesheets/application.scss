@@ -35,3 +35,28 @@
   @extend .alert-notice;
 }
 
+.jumbotron {
+  background-image: url("1.jpg");
+  background-size: cover;
+  height: auto;
+}
+
+.jumbotron p {
+  font-weight: 100 !important;
+  color: #ffffff !important;
+
+}
+
+.jumbotron h1 {
+  letter-spacing:10px !important;
+  font-weight: 100 !important;
+  color: #FFFFFF !important;
+}
+
+.open > a, .navbar-default .navbar-nav > .active > a {
+  background-image: linear-gradient(to bottom, #3f8df3  0%, #3f8df3 100%) !important;
+}
+
+.active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #ffffff !important;
+}
