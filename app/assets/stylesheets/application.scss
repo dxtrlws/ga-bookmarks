@@ -19,9 +19,9 @@
  */
 
 
-@import "_bootstrap-sprockets.scss";
-@import "_bootstrap.scss";
-@import "bootstrap/_theme.scss";
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
 
 .alert-alert {
   @extend .alert-warning;
