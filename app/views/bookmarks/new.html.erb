@@ -1,5 +1,14 @@
+<section style="margin-top: -21px;" class="row page_header">
+  <div class="container">
+    <h3>my bookmarks</h3>
+    <ol class="breadcrumb">
+      <li><%= link_to 'home', pages_index_path %> </li>
+      <li><%= link_to 'my bookmarks', bookmarks_path %></li>
+      <li class="active">add new bookmark</li>
+    </ol>
+  </div>
+</section>
 
 <div class="container">
-  <h1>Add a new bookmark</h1>
 <%= render 'form' %>
   </div>

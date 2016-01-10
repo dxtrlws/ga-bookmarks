@@ -41,6 +41,7 @@ class BookmarksController < ApplicationController
       # redirects to the list of bookmarks that was created or edited by the user
       redirect_to bookmarks_path
     else
+      flash[:notice] = "Please enter a valid URL"
       render 'edit'
     end
   end

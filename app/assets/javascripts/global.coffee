@@ -1,6 +1,6 @@
 jQuery ->
   displayHint = (strength, crack_time) ->
-    msg = 'Password is ' + strength + ' (time to break it: ' + crack_time + ')'
+    msg = 'Password is ' + strength
 
     estimate_message = this.next('.estimate-message')
     if estimate_message.length > 0

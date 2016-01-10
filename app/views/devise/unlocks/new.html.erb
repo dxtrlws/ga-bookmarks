@@ -1,5 +1,16 @@
+
+<section style="margin-top: -21px;" class="row page_header">
+  <div class="container">
+    <h3>ga bookmarks</h3>
+    <ol class="breadcrumb">
+      <li><%= link_to 'home', pages_index_path %> </li>
+      <li class="active">Resend unlock instructions</li>
+    </ol>
+  </div>
+</section>
+<br>
 <div class="container">
-<h2>Resend unlock instructions</h2>
+
 
 <%= form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f| %>
   <%= devise_error_messages! %>
