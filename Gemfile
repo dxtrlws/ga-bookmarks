@@ -36,7 +36,7 @@ gem 'delayed_job_active_record'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+gem 'font-awesome-rails', '~> 4.1.0.0'
 
 group :development, :test do
   gem 'byebug'

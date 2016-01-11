@@ -7,4 +7,10 @@ class Bookmark < ActiveRecord::Base
 
   scope :alpha, lambda { order("bookmarks.description, ASC") }
 
+  def self.search(query)
+
+      self.where("description like ?", "%#{query}%" )
+
+  end
+
 end

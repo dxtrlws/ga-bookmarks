@@ -1,0 +1,12 @@
+<%= form_tag bookmarks_path, method: 'get' do %>
+  <fieldset>
+    <%= text_field_tag 'search', @search, placeholder: "Search Bookmarks", size: 35   %>
+    <button type="submit" class="btn btn-primary btn-sm">
+
+      <span class="glyphicon glyphicon-search"></span>
+    </button>
+
+  </fieldset>
+
+<% end %>
+<br>

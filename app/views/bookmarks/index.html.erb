@@ -10,15 +10,18 @@
 </section>
 
 <div class="container">
+
 <br>
 <p><%= link_to("Add Bookmark", new_bookmark_path, class: 'btn btn-primary')  %> </p>
 <br>
+
+<%= render 'search' %>
+
 
 <% if @bookmarks.empty? %>
    <p> <%= "Looks like you don't have any bookmarks. Click the 'Add Bookmark' button above to get started." %> </p>
     <% else %>
     <% end %>
-
 
 <table class="table">
   <tr>

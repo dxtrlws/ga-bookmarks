@@ -16,6 +16,7 @@
 //= require bootstrap/dropdown
 //= require turbolinks
 //= require global
+//= require bootstrap
 //= require_tree .
 
 $(function() {

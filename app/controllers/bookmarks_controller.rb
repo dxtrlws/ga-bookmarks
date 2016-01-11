@@ -4,7 +4,11 @@ class BookmarksController < ApplicationController
 
   def index
     # sets variable to show bookmarks created by user
-    @bookmarks = current_user.bookmarks
+    @search = params[:search]
+    @bookmarks = @search ? Bookmark.search(@search) :
+        @bookmarks = current_user.bookmarks.order("description ASC")
+
+
   end
 
   def new
