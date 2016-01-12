@@ -1,12 +1,14 @@
-***GA Bookmarks Rails App***
-------
 
-Simple rails app to manage bookmarks. Uses devise for user accounts and your basic CRUD for creating bookmarks. 
+
+##GA Bookmarks Rails App
+---
+
+Simple rails app to manage bookmarks. Uses devise for user accounts and your basic CRUD for creating bookmarks.
 
 * Ruby 2.2.3
 * Rails 4.2.4
 
-**Installation**
+###Installation
 
 
 * Clone repository
